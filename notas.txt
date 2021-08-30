@@ -1,0 +1,5 @@
+sudo /opt/lampp/lampp start
+
+http://localhost/Proyecto/Rafael-Roman/Prototipo/htdocs/index.php
+
+https://localhost/dashboard/

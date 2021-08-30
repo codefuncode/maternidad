@@ -1,0 +1,7 @@
+http://localhost/Proyecto/Rafael-Roman/Prototipo/htdocs/index.php
+
+https://localhost/dashboard/
+
+http://tutorwebenlinea.epizy.com/?i=1
+
+http://localhosto/Proyecto/Rafael-Roman/Prototipo/htdocs/index.php
