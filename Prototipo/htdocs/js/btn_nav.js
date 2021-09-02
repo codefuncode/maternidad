@@ -7,9 +7,9 @@ function btn_vav(argument) {
 	let btn_perfil_usuario =
 		document.querySelector('.btn_perfil_usuario');
 
-	console.log('=====================');
-	console.log(all_user_panel);
-	console.log('=====================');
+	// console.log('=====================');
+	// console.log(all_user_panel);
+	// console.log('=====================');
 
 	btn_nav_registro_bebe.addEventListener("click", function(argument) {
 

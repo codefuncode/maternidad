@@ -12,11 +12,11 @@ function cargada(argument) {
 
 
 		let binbenida_usuario = document.querySelectorAll(".binbenida_usuario");
-		console.log(binbenida_usuario);
+		// console.log(binbenida_usuario);
 
 
 		let botones = document.querySelectorAll("button");
-		console.log(botones);
+		// console.log(botones);
 
 		inicio_automatico();
 	}
@@ -25,21 +25,21 @@ function cargada(argument) {
 
 
 function w3_open() {
-	console.log('js');
+	// console.log('js');
 	let mySidebar = document.getElementById("mySidebar");
 
 	// Get the DIV with overlay effect
 	let overlayBg = document.getElementById("myOverlay");
 	let main = document.getElementById("main");
 	if (mySidebar.style.display === 'block') {
-		console.log('w3_open block');
+		// console.log('w3_open block');
 		mySidebar.style.display = 'none';
 		overlayBg.style.display = "none";
 		// mySidebar.style.width = "0px";
 		mySidebar.style.width = "0px";
 		main.style.marginLeft = "0px";
 	} else {
-		console.log("w3_open none");
+		// console.log("w3_open none");
 		mySidebar.style.display = 'block';
 		overlayBg.style.display = "block";
 		mySidebar.style.width = "300px";
@@ -50,7 +50,7 @@ function w3_open() {
 
 // Close the sidebar with the close button
 function w3_close() {
-	console.log('js');
+	// console.log('js');
 	let mySidebar = document.getElementById("mySidebar");
 
 	// Get the DIV with overlay effect

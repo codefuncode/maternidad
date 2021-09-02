@@ -1,5 +1,16 @@
 sudo /opt/lampp/lampp start
 
-http://localhost/Proyecto/Rafael-Roman/Prototipo/htdocs/index.php
 
+http://localhost/Proyecto/maternidad/Prototipo/htdocs/index.php
 https://localhost/dashboard/
+
+http://maternidad.epizy.com/
+
+
+
+
+https://www.ostraining.com/blog/coding/stopwatch/‬
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_weight_converter_pounds_to_kilograms‬
+
+https://www.chartjs.org/‬

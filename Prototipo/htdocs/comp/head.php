@@ -33,6 +33,7 @@
    <script src="js/fun_registrase.js" type="text/javascript">
    </script>
    <script src="js/inicio_automatico.js" type="text/javascript">
+   </script>   <script src="js/btn_generico_cerrar_modal.js" type="text/javascript">
    </script>
    <!-- ============================================================== -->
    <!-- xxxxxxxxxxxxxx -->

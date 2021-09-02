@@ -33,6 +33,7 @@
 				cierra_sesion.style.display = "block";
 				console.log('idusuario es');
 				console.log(localStorage.getItem("idusuario"));
+				// recupera los datos nesesarios de imagenes ty todo tofo 
 
 				let formData = new FormData();
 				formData.append("idusuario", localStorage.getItem("idusuario"));

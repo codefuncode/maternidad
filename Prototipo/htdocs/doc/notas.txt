@@ -42,32 +42,38 @@ Datos se recopilan diariamente
 
 Lactancia artificial y lactancia natural 
 
-a) Tiempo en extracción 
+a) Tiempo en extracción *** Cronometro
 
 *** tiempo en dejar la leche fórmula ***
 
-b) Tiempo en lactancia
+b) Tiempo en lactancia  ** Cronometro
 --------------------------------------------------------------
 
-c) Hora que brindo biberón      					   	
+c) Hora que brindo biberón    *** recopilar fecha hora  automatico 					   	
 soporta múltiples entradas 
 
 d) Oz que produjo en la extracción 				   	
-onzas por cada ceno extracción lactancia 
+onzas por cada ceno extracción lactancia  **** recopilar cantidad por cada ceno 
 
-e) Cantidad de veces que cambio el panal     	
+e) Cantidad de veces que cambio el panal    ccantidad veces cambio de pañal	
 soporta múltiple diario
-f) Horas que el bebe durmió  									
+
+
+f) Horas que el bebe durmió  				horas manual 					
 soporta múltiple diario
 
 g) Cambio de medida  
-medida estatura soporta mensual {medida posible de tamaño}
+medida estatura soporta mensual {medida posible de tamaño}   medida manuial 
 
 h) Cambio en el peso del bebe
-medida estatura soporta semanal  {medida posible de tamaño}
+medida estatura soporta semanal  {medida posible de tamaño}   manual 
 
+
+
+
+=============================================
 i) Contracciones
-Soporta  no es requerido
+Soporta  no es requerido     solo si esta envarasada 
 
 
 ginecologo informacion 

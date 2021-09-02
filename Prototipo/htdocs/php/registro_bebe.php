@@ -1,43 +1,58 @@
 <?php
 
-// nombre_bebe    fecha_nacimiento_bebe    id_genero    id_lactancia    id_cliente
+$nombre_bebe           = $_POST['nombre_bebe'];
+$fecha_nacimiento_bebe = $_POST['fecha_nacimiento_bebe'];
+$genero                = $_POST['genero'];
+$lactancia             = $_POST['lactancia'];
+$peso                  = $_POST['peso'];
 
-include_once '../conn/conn.php';
+function registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $lactancia, $peso)
+{
 
-try {
-   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-   // set the PDO error mode to exception
-   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   include_once '../conn/conn.php';
 
-   // prepare sql and bind parameters
-   $stmt = $conn->prepare("INSERT INTO bebe (nombre_bebe, fecha_nacimiento_bebe, id_genero,id_lactancia,id_cliente)
-   VALUES (:nombre_bebe, :fecha_nacimiento_bebe, :id_genero,id_lactancia,id_cliente)");
-   $stmt->bindParam(':nombre_bebe', $nombre_bebe);
-   $stmt->bindParam(':fecha_nacimiento_bebe', $fecha_nacimiento_bebe);
-   $stmt->bindParam(':id_genero', $id_genero);
-   $stmt->bindParam(':id_lactancia', $id_lactancia);
-   $stmt->bindParam(':id_cliente', $id_cliente);
+   try {
+      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+      // set the PDO error mode to exception
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-   //  // insert a row
-   //  $firstname = "John";
-   //  $lastname  = "Doe";
-   //  $email     = "john@example.com";
-   //  $stmt->execute();
+      // prepare sql and bind parameters
+      $stmt = $conn->prepare(
+         "INSERT INTO bebe (nombre_bebe, fecha_nacimiento_bebe, genero,lactancia,peso)
+         VALUES (:nombre_bebe, :fecha_nacimiento_bebe, :genero,:lactancia,:peso)");
 
-   //  // insert another row
-   //  $firstname = "Mary";
-   //  $lastname  = "Moe";
-   //  $email     = "mary@example.com";
-   //  $stmt->execute();
+      $stmt->bindParam(':nombre_bebe', $nombre_bebe);
+      $stmt->bindParam(':fecha_nacimiento_bebe', $fecha_nacimiento_bebe);
+      $stmt->bindParam(':genero', $genero);
+      $stmt->bindParam(':lactancia', $lactancia);
+      $stmt->bindParam(':peso', $peso);
 
-   //  // insert another row
-   //  $firstname = "Julie";
-   //  $lastname  = "Dooley";
-   //  $email     = "julie@example.com";
-   //  $stmt->execute();
+      //  // insert a row
+      //  $firstname = "John";
+      //  $lastname  = "Doe";
+      //  $email     = "john@example.com";
+      //  $stmt->execute();
 
-   echo "successfully";
-} catch (PDOException $e) {
-   echo "Error: " . $e->getMessage();
+      //  // insert another row
+      //  $firstname = "Mary";
+      //  $lastname  = "Moe";
+      //  $email     = "mary@example.com";
+      //  $stmt->execute();
+
+      //  // insert another row
+      //  $firstname = "Julie";
+      //  $lastname  = "Dooley";
+      //  $email     = "julie@example.com";
+      $stmt->execute();
+
+      $respuesta = array('respuesta' => "ok");
+
+      echo json_encode($respuesta);
+   } catch (PDOException $e) {
+      echo "Error: " . $e->getMessage();
+   }
+   $conn = null;
+
 }
-$conn = null;
+
+registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $lactancia, $peso);

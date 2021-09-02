@@ -27,7 +27,7 @@
                Genero del bebe
             </p>
             <p>
-               <input checked="" class="w3-radio" name="genero" type="radio" value="masculino"/>
+               <input  class="w3-radio" name="genero" type="radio" value="masculino"/>
                <label>
                   Male
                </label>
@@ -44,7 +44,7 @@
                Lactancia
             </p>
             <p>
-               <input checked="" class="w3-radio" name="lactancia" type="radio" value="Lactancia"/>
+               <input  class="w3-radio" name="lactancia" type="radio" value="Lactancia"/>
                <label>
                   Lactancia
                </label>
@@ -56,7 +56,7 @@
                </label>
             </p>
             <p>
-               <input checked="" class="w3-radio" name="lactancia" type="radio" value="Lactancia diferida"/>
+               <input  class="w3-radio" name="lactancia" type="radio" value="Lactancia diferida"/>
                <label>
                   Lactancia diferida
                </label>
@@ -74,8 +74,19 @@
                   Peso del bebe
                </label>
                <input class="w3-input w3-border w3-round" name="peso_bebe" type="number"/>
+               <select name="" class="peso_medida">
+                  <option value="kg">kg</option>
+                  <option value="lb">lb</option>
+               </select>
             </p>
          </div>
+      </div>
+      <div class="w3-container" style="margin-bottom: 100px;">
+         <p>
+            <button class="w3-btn w3-block w3-black btn_inserta_bebe">
+               Button
+            </button>
+         </p>
       </div>
    </div>
 </div>

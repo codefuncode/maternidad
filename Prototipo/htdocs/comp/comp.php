@@ -8,8 +8,7 @@ include_once 'bienvenida_inicio.php';
 include_once 'inicia_sesion.php';
 include_once 'formulario_bebe.php';
 include_once 'perfil_usuario.php';
-
-// include_once 'inicio.php';
+include_once 'mensaje_bebe_registro.php';
 // include_once 'inicio.php';
 // include_once 'inicio.php';
 // include_once 'inicio.php';
