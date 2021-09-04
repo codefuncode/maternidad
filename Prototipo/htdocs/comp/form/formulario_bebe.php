@@ -39,7 +39,7 @@
                </label>
             </p>
          </div>
-         <div class="w3-border-top w3-margin-bottom w3-padding-16">
+       <!--   <div class="w3-border-top w3-margin-bottom w3-padding-16">
             <p>
                Lactancia
             </p>
@@ -67,7 +67,7 @@
                   Lactancia mixta
                </label>
             </p>
-         </div>
+         </div> -->
          <div class="w3-border-top w3-margin-bottom w3-padding-16">
             <p>
                <label>

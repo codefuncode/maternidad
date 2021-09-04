@@ -94,9 +94,9 @@ function inserta_bebe(argument) {
 			document.querySelector(
 				"#mensaje_bebe_registro .mensaje_bebe_registro_text_genero");
 
-		let mensaje_bebe_registro_text_lactancia =
-			document.querySelector(
-				"#mensaje_bebe_registro .mensaje_bebe_registro_text_lactancia");
+		// let mensaje_bebe_registro_text_lactancia =
+		// 	document.querySelector(
+		// 		"#mensaje_bebe_registro .mensaje_bebe_registro_text_lactancia");
 
 		let mensaje_bebe_registro_text_peso_bebe =
 			document.querySelector(
@@ -108,7 +108,8 @@ function inserta_bebe(argument) {
 
 
 
-		function valuidacampos(nombre, fecha, genero, lactancia, peso) {
+		// function valuidacampos(nombre, fecha, genero, lactancia, peso) {
+		function valuidacampos(nombre, fecha, genero, peso) {
 
 
 
@@ -116,7 +117,7 @@ function inserta_bebe(argument) {
 				nombre: "",
 				fecha: "",
 				genero: "",
-				lactancia: "",
+				// lactancia: "",
 				peso: "",
 
 			}
@@ -134,10 +135,10 @@ function inserta_bebe(argument) {
 
 				respuesta.genero = "si";
 			}
-			if (lactancia.length > 0) {
+			// if (lactancia.length > 0) {
 
-				respuesta.lactancia = "si";
-			}
+			// 	respuesta.lactancia = "si";
+			// }
 			if (peso.length > 0) {
 
 				respuesta.peso = "si";
@@ -172,20 +173,21 @@ function inserta_bebe(argument) {
 
 		}
 
-		let validacion = valuidacampos(nombre_bebe.value, fecha_naciminto_bebe.value, valor_genero, valor_lactancia, peso_bebe.value);
+		let validacion = valuidacampos(nombre_bebe.value, fecha_naciminto_bebe.value, valor_genero, peso_bebe.value);
+		// let validacion = valuidacampos(nombre_bebe.value, fecha_naciminto_bebe.value, valor_genero, valor_lactancia, peso_bebe.value);
 
 
 		validacion.nombre
 		validacion.fecha
 		validacion.genero
-		validacion.lactancia
+		// validacion.lactancia
 		validacion.peso
 
 
 		if (validacion.nombre == "" ||
 			validacion.fecha == "" ||
 			validacion.genero == "" ||
-			validacion.lactancia == "" ||
+			// validacion.lactancia == "" ||
 			validacion.peso == "") {
 
 			alert("algun campo esta vacio");
@@ -203,8 +205,8 @@ function inserta_bebe(argument) {
 			mensaje_bebe_registro_text_genero.textContent =
 				valor_genero;
 
-			mensaje_bebe_registro_text_lactancia.textContent =
-				valor_lactancia;
+			// mensaje_bebe_registro_text_lactancia.textContent =
+			// 	valor_lactancia;
 
 			mensaje_bebe_registro_text_peso_bebe.textContent =
 				peso_bebe.value + " " + peso_medida.value;
