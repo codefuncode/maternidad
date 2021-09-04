@@ -35,13 +35,13 @@ function inserta_bebe(argument) {
 		document.querySelector(
 			'.form_formulario_bebe [name="nombre_bebe"]'
 		);
-
+	nombre_bebe.value = "";
 
 	let fecha_naciminto_bebe =
 		document.querySelector(
 			'.form_formulario_bebe [name="fecha_naciminto_bebe"]'
 		);
-
+	fecha_naciminto_bebe.value = "";
 
 	let genero =
 		document.querySelectorAll(
@@ -63,7 +63,7 @@ function inserta_bebe(argument) {
 		document.querySelector(
 			'.form_formulario_bebe [name="peso_bebe"]'
 		);
-
+	peso_bebe.value = "";
 	let peso_medida = document.querySelector(".formulario_bebe .peso_medida ");
 	console.log(peso_medida);
 
@@ -72,16 +72,16 @@ function inserta_bebe(argument) {
 
 	btn_inserta_bebe.addEventListener("click", function(argument) {
 		// alert("Boton funcionando ");
-		console.log('nombre_bebe');
-		console.log(nombre_bebe);
-		console.log('fecha_naciminto_bebe');
-		console.log(fecha_naciminto_bebe);
-		console.log('genero');
-		console.log(genero);
-		console.log('lactancia');
-		console.log(lactancia);
-		console.log('peso_bebe');
-		console.log(peso_bebe);
+		// console.log('nombre_bebe');
+		// console.log(nombre_bebe);
+		// console.log('fecha_naciminto_bebe');
+		// console.log(fecha_naciminto_bebe);
+		// console.log('genero');
+		// console.log(genero);
+		// console.log('lactancia');
+		// console.log(lactancia);
+		// console.log('peso_bebe');
+		// console.log(peso_bebe);
 		let mensaje_bebe_registro_text_nombre_bebe =
 			document.querySelector(
 				"#mensaje_bebe_registro .mensaje_bebe_registro_text_nombre_bebe");
@@ -258,7 +258,21 @@ function inserta_bebe(argument) {
 					const json = resultado;
 					const obj = JSON.parse(json);
 					if (obj.respuesta == "ok") {
-						alert('Registro insertado');
+						// alert('Registro insertado');
+						mensaje_bebe_registro.style.display = "none";
+						let bebe_insertado = document.getElementById("bebe_insertado");
+						let bebe_insertado_btn_close =
+							document.querySelector(
+								"#bebe_insertado .btn_generico_cerrar_modal");
+
+
+
+						bebe_insertado.style.display = "block";
+						bebe_insertado_btn_close.addEventListener("click", function(argument) {
+							bebe_insertado.style.display = "none";
+							// inserta_bebe();
+						});
+
 					}
 
 				});

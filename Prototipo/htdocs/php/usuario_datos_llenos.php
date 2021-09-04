@@ -8,7 +8,7 @@ function datos_usuario()
    try {
       $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
       $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      $stmt = $conn->prepare("SELECT * FROM cliente WHERE id_usuario =:idusuario");
+      $stmt = $conn->prepare("SELECT * FROM cliente,usuario WHERE id_usuario =:idusuario GROUP BY id_usuario");
 
       $stmt->bindParam(
          ':idusuario',
@@ -17,8 +17,10 @@ function datos_usuario()
 
       // set the resulting array to associative
       $result    = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      $registros = count($result);
       $resultado = array(
-         "respuesta" => $result,
+         "respuesta" => $registros,
+         "datos"     => $result,
       );
 
       echo json_encode($resultado);

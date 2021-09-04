@@ -104,41 +104,56 @@
 				console.log(error);
 
 			}).always(function(resultado) {
-
+				// console.log(resultado);
 				const json = resultado;
+
+
 				const obj = JSON.parse(json);
 
-				console.log(obj.respuesta[0]);
-				console.log(obj.respuesta[0]['nombre_cliente']);
+				console.log(obj.respuesta);
 
-				let aviso_completa_perfil = document.querySelector(".aviso_completa_perfil");
-				let btn_completa_perfil = document.querySelector(".btn_completa_perfil");
+				if (obj.respuesta == 1) {
 
-				btn_completa_perfil.addEventListener("click", function(argument) {
-					let bienvenida_inicio = document.getElementById("bienvenida_inicio");
-					bienvenida_inicio.style.display = "none";
-					let perfil_usuario = document.querySelector(".perfil_usuario");
-					perfil_usuario.style.display = "block";
-				});
+					console.log(obj.datos[0]);
+					console.log(obj.datos[0]['nombre_cliente']);
 
-				let cuerpo = document.getElementById('cuerpo');
-				if (obj.respuesta[0]['nombre_cliente'] == null ||
-					obj.respuesta[0]['apellido_cliente_paterno'] == null ||
-					obj.respuesta[0]['apellido_cliente_materno'] == null ||
-					obj.respuesta[0]['id_etapa'] == null ||
-					obj.respuesta[0]['fecha_regreso'] == null ||
-					obj.respuesta[0]['id_genero'] == null) {
-					console.log('es nulo');
-					aviso_completa_perfil.style.display = "block";
+					let aviso_completa_perfil = document.querySelector(".aviso_completa_perfil");
+					let btn_completa_perfil = document.querySelector(".btn_completa_perfil");
 
+					btn_completa_perfil.addEventListener("click", function(argument) {
+						let bienvenida_inicio = document.getElementById("bienvenida_inicio");
+						bienvenida_inicio.style.display = "none";
+						let perfil_usuario = document.querySelector(".perfil_usuario");
+						perfil_usuario.style.display = "block";
+					});
+
+					let cuerpo = document.getElementById('cuerpo');
+					if (obj.datos[0]['nombre_cliente'] == null ||
+						obj.datos[0]['apellido_cliente_paterno'] == null ||
+						obj.datos[0]['apellido_cliente_materno'] == null ||
+						obj.datos[0]['id_etapa'] == null ||
+						obj.datos[0]['fecha_regreso'] == null ||
+						obj.datos[0]['id_genero'] == null) {
+						console.log('es nulo');
+						aviso_completa_perfil.style.display = "block";
+						let nombre_usuario = document.querySelectorAll(".nombre_usuario");
+						for (var i = 0; i < nombre_usuario.length; i++) {
+							nombre_usuario[i].textContent = obj.datos[0]["nombre_usuario"];
+						}
+
+					} else {
+						aviso_completa_perfil.style.display = "none";
+
+						console.log('no es nulo ');
+					}
+					console.log(aviso_completa_perfil);
 
 				} else {
-					aviso_completa_perfil.style.display = "none";
 
-					console.log('no es nulo ');
+					alert("Algo susede con la coooke no cuadra en la base de datos, elimina las cookes y datos de esta paguionaen el navegador y vierlve a registrarte ");
+					localStorage.clear();
+					location.reload();
 				}
-				console.log(aviso_completa_perfil);
-				// Object { id_cliente: "4", nombre_cliente: null, apellido_cliente_paterno: null, apellido_cliente_materno: null, id_etapa: null, fecha_regreso: null, id_genero: null, id_usuario: "28" }
 
 
 
