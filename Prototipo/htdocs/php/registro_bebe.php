@@ -3,10 +3,10 @@
 $nombre_bebe           = $_POST['nombre_bebe'];
 $fecha_nacimiento_bebe = $_POST['fecha_nacimiento_bebe'];
 $genero                = $_POST['genero'];
-// $lactancia             = $_POST['lactancia'];
-$peso = $_POST['peso'];
+$lactancia             = $_POST['lactancia'];
+$peso                  = $_POST['peso'];
 
-function registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $peso)
+function registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $lactancia, $peso)
 {
 
    include_once '../conn/conn.php';
@@ -18,13 +18,13 @@ function registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $peso)
 
       // prepare sql and bind parameters
       $stmt = $conn->prepare(
-         "INSERT INTO bebe (nombre_bebe, fecha_nacimiento_bebe, genero,peso)
-         VALUES (:nombre_bebe, :fecha_nacimiento_bebe,:genero,:peso)");
+         "INSERT INTO bebe (nombre_bebe, fecha_nacimiento_bebe, genero,lactancia,peso)
+         VALUES (:nombre_bebe, :fecha_nacimiento_bebe, :genero,:lactancia,:peso)");
 
       $stmt->bindParam(':nombre_bebe', $nombre_bebe);
       $stmt->bindParam(':fecha_nacimiento_bebe', $fecha_nacimiento_bebe);
       $stmt->bindParam(':genero', $genero);
-      // $stmt->bindParam(':lactancia', $lactancia);
+      $stmt->bindParam(':lactancia', $lactancia);
       $stmt->bindParam(':peso', $peso);
 
       //  // insert a row
@@ -55,4 +55,4 @@ function registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $peso)
 
 }
 
-registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $peso);
+registro_bebe($nombre_bebe, $fecha_nacimiento_bebe, $genero, $lactancia, $peso);

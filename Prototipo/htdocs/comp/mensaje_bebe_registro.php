@@ -28,11 +28,11 @@
                   <span class="mensaje_bebe_registro_text_genero">
                   </span>
                </p>
-         <!--       <p class="">
+               <p class="">
                   xxxxxxxxx :
                   <span class="mensaje_bebe_registro_text_lactancia">
                   </span>
-               </p> -->
+               </p>
                <p class="">
                   xxxxxxxxx :
                   <span class="mensaje_bebe_registro_text_peso_bebe">
