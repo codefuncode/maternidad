@@ -51,13 +51,13 @@ function inserta_bebe(argument) {
 		genero[i].checked = false;
 	}
 
-	let lactancia =
-		document.querySelectorAll(
-			'.form_formulario_bebe [name="lactancia"]'
-		);
-	for (var i = 0; i < lactancia.length; i++) {
-		lactancia[i].checked = false;
-	}
+	// let lactancia =
+	// 	document.querySelectorAll(
+	// 		'.form_formulario_bebe [name="lactancia"]'
+	// 	);
+	// for (var i = 0; i < lactancia.length; i++) {
+	// 	lactancia[i].checked = false;
+	// }
 
 	let peso_bebe =
 		document.querySelector(
@@ -78,8 +78,8 @@ function inserta_bebe(argument) {
 		console.log(fecha_naciminto_bebe);
 		console.log('genero');
 		console.log(genero);
-		console.log('lactancia');
-		console.log(lactancia);
+		// console.log('lactancia');
+		// console.log(lactancia);
 		console.log('peso_bebe');
 		console.log(peso_bebe);
 		let mensaje_bebe_registro_text_nombre_bebe =
@@ -94,9 +94,9 @@ function inserta_bebe(argument) {
 			document.querySelector(
 				"#mensaje_bebe_registro .mensaje_bebe_registro_text_genero");
 
-		let mensaje_bebe_registro_text_lactancia =
-			document.querySelector(
-				"#mensaje_bebe_registro .mensaje_bebe_registro_text_lactancia");
+		// let mensaje_bebe_registro_text_lactancia =
+		// 	document.querySelector(
+		// 		"#mensaje_bebe_registro .mensaje_bebe_registro_text_lactancia");
 
 		let mensaje_bebe_registro_text_peso_bebe =
 			document.querySelector(
@@ -108,7 +108,7 @@ function inserta_bebe(argument) {
 
 
 
-		function valuidacampos(nombre, fecha, genero, lactancia, peso) {
+		function valuidacampos(nombre, fecha, genero, peso) {
 
 
 
@@ -116,7 +116,7 @@ function inserta_bebe(argument) {
 				nombre: "",
 				fecha: "",
 				genero: "",
-				lactancia: "",
+				// lactancia: "",
 				peso: "",
 
 			}
@@ -134,10 +134,10 @@ function inserta_bebe(argument) {
 
 				respuesta.genero = "si";
 			}
-			if (lactancia.length > 0) {
+			// if (lactancia.length > 0) {
 
-				respuesta.lactancia = "si";
-			}
+			// 	respuesta.lactancia = "si";
+			// }
 			if (peso.length > 0) {
 
 				respuesta.peso = "si";
@@ -151,8 +151,8 @@ function inserta_bebe(argument) {
 		console.log(fecha_naciminto_bebe);
 		console.log('genero');
 		console.log(genero);
-		console.log('lactancia');
-		console.log(lactancia);
+		// console.log('lactancia');
+		// console.log(lactancia);
 		console.log('peso_bebe');
 		console.log(peso_bebe);
 		var valor_genero = "";
@@ -163,16 +163,16 @@ function inserta_bebe(argument) {
 			}
 
 		}
-		var valor_lactancia = "";
-		for (var i = 0; i < lactancia.length; i++) {
+		// var valor_lactancia = "";
+		// for (var i = 0; i < lactancia.length; i++) {
 
-			if (lactancia[i].checked) {
-				valor_lactancia = lactancia[i].value;
-			}
+		// 	if (lactancia[i].checked) {
+		// 		valor_lactancia = lactancia[i].value;
+		// 	}
 
-		}
+		// }
 
-		let validacion = valuidacampos(nombre_bebe.value, fecha_naciminto_bebe.value, valor_genero, valor_lactancia, peso_bebe.value);
+		let validacion = valuidacampos(nombre_bebe.value, fecha_naciminto_bebe.value, valor_genero, peso_bebe.value);
 
 
 		validacion.nombre
@@ -203,8 +203,8 @@ function inserta_bebe(argument) {
 			mensaje_bebe_registro_text_genero.textContent =
 				valor_genero;
 
-			mensaje_bebe_registro_text_lactancia.textContent =
-				valor_lactancia;
+			// mensaje_bebe_registro_text_lactancia.textContent =
+			// 	valor_lactancia;
 
 			mensaje_bebe_registro_text_peso_bebe.textContent =
 				peso_bebe.value + " " + peso_medida.value;
@@ -230,7 +230,7 @@ function inserta_bebe(argument) {
 				formData.append('nombre_bebe', nombre_bebe.value);
 				formData.append('fecha_nacimiento_bebe', fecha_naciminto_bebe.value);
 				formData.append('genero', valor_genero);
-				formData.append('lactancia', valor_lactancia);
+				// formData.append('lactancia', valor_lactancia);
 				formData.append('peso', peso_bebe.value);
 
 
