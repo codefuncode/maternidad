@@ -1,4 +1,8 @@
+<!-- ================================================== -->
+<!-- Todos los componentes incluidoas aqui  -->
+
 <?php
+//
 include_once 'imagenes_galeria.php';
 include_once 'inicio.php';
 include_once 'registro.php';
@@ -10,9 +14,13 @@ include_once 'inicia_sesion.php';
 include_once 'form/formulario_bebe.php';
 include_once 'perfil_usuario.php';
 include_once 'mensaje_bebe_registro.php';
+//
 
 // include_once 'inicio.php';
 // include_once 'inicio.php';
 // include_once 'inicio.php';
 // include_once 'inicio.php';
 // include_once 'inicio.php';
+
+?>
+<!-- ================================================== -->
