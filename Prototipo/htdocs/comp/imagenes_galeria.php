@@ -1,3 +1,6 @@
+
+
+<!-- IMAGENES GALERIA ========================================= -->
 <div class="w3-container imagenes_galeria all_user_panel">
 <div class="w3-container">
    <h1>
@@ -56,3 +59,5 @@
    </div>
 </div>
 </div>
+
+<!-- IMAGENES GALERIA ========================================= -->

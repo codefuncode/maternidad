@@ -1,3 +1,5 @@
+
+<!--  REGISTRO ===================================== -->
 <div class="w3-container">
    <!--    <h2>
       W3.CSS Login Modal
@@ -68,3 +70,4 @@
 </div>
 <div class="w3-container">
 </div>
+<!--  REGISTRO ===================================== -->

@@ -1,3 +1,5 @@
+
+<!-- INOICIO ================================= -->
 <div class="w3-container">
    <div class="w3-modal all_modal" id="inicio" style="display:none; ;">
       <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;margin-bottom: 100px">
@@ -57,3 +59,4 @@
 </div>
 <div class="w3-container">
 </div>
+<!-- INOICIO ================================= -->

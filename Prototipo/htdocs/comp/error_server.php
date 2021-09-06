@@ -1,3 +1,5 @@
+
+<!-- SROR SERVER =========================================== -->
 <div class="w3-container">
    <div class="w3-modal all_modal" id="error_server" style="display:none;">
       <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px; height: 600px;">
@@ -20,3 +22,4 @@
       </div>
    </div>
 </div>
+<!-- SROR SERVER =========================================== -->

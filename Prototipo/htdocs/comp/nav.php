@@ -1,3 +1,5 @@
+<!--  NAVEGACION  ============================================= -->
+
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left menu_navegacion" id="mySidebar" style="z-index:3;width:300px; display: none ;">
    <br/>
    <div class="panel_usuario">
@@ -82,3 +84,4 @@
 </nav>
 <div class="w3-overlay w3-hide-large w3-animate-opacity" id="myOverlay" style="cursor:pointer" title="close side menu">
 </div>
+<!--  NAVEGACION  ============================================= -->
