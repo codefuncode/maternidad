@@ -7,10 +7,14 @@
          <?php include "comp/nevegacion/nav_superior.php";?>
          <?php include_once 'comp/nav.php';?>
          <div class="w3-main" id="main" style="margin-left:300px;margin-top:43px;">
+            <!--  contenedor  del cuerpo ============================================  -->
             <div class="w3-container cuerpo">
-               <!--  SE incluyen todos los componentes que se usaran  -->
+                <!-- ================ OMPONENTES ============================ -->
+               <!--  Se incluyen todos los componentes que se usaran  -->
                <?php include_once 'comp/comp.php';?>
+               <!-- ================= OMPONENTES ============================ -->
             </div>
+            <!--  contenedor  del cuerpo ============================================  -->
          </div>
       </div>
       <!--    <script src="js/js.js" type="text/javascript">
