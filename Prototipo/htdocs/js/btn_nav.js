@@ -1,15 +1,23 @@
 function btn_vav(argument) {
+
+
 	let all_user_panel =
 		document.querySelectorAll(".all_user_panel");
+
 	let btn_nav_registro_bebe =
 		document.querySelector(".btn_nav_registro_bebe");
 
 	let btn_perfil_usuario =
 		document.querySelector('.btn_perfil_usuario');
 
-	// console.log('=====================');
-	// console.log(all_user_panel);
-	// console.log('=====================');
+
+
+	// =============================================================================================
+	//  Se trabajan los botones de navegación de la barra lateral
+	//  POdemos considerar nombrar un fichero  y renombrar la 
+	// función con  un nombre  descriptivo sugerencia  para 
+	// el nombre de fichero y función {btn_nav_laeral()}
+
 
 	btn_nav_registro_bebe.addEventListener("click", function(argument) {
 
@@ -19,6 +27,8 @@ function btn_vav(argument) {
 
 		let formulario_bebe = document.querySelector(".formulario_bebe");
 		formulario_bebe.style.display = "block";
+
+
 	});
 
 	btn_perfil_usuario.addEventListener("click", function(argument) {
@@ -28,6 +38,8 @@ function btn_vav(argument) {
 
 		let perfil_usuario = document.querySelector(".perfil_usuario");
 		perfil_usuario.style.display = "block";
-	});
 
+
+	});
+	// =============================================================================================
 }
