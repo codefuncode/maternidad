@@ -95,6 +95,7 @@
 
 			let formulario_bebe = document.querySelector(".formulario_bebe");
 			let cuerpo = document.getElementById("cuerpo");
+
 			cuerpo.style.display = "block";
 			formulario_bebe.style.display = "none";
 
@@ -177,7 +178,7 @@
 					let cuerpo = document.getElementById('cuerpo');
 
 
-					//  se recuperan los datos y si uno de los datos no esta completado 
+					// Se recuperan los datos y si uno de los datos no esta completado 
 					// despliega componente dentro de modal con aviso. 
 					if (obj.datos[0]['nombre_cliente'] == null ||
 						obj.datos[0]['apellido_cliente_paterno'] == null ||
