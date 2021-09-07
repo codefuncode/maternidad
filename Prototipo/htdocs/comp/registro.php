@@ -1,20 +1,13 @@
-
 <!--  REGISTRO ===================================== -->
 <div class="w3-container">
-   <!--    <h2>
-      W3.CSS Login Modal
-   </h2>
-   <button class="w3-button w3-green w3-large" onclick="document.getElementById('registo').style.display='block'">
-      Login
-   </button> -->
    <div class="w3-modal all_modal" id="registo" style="display:none;">
       <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;margin-bottom: 100px">
          <div class="w3-center">
             <br/>
-            <span class="w3-button w3-xlarge w3-hover-red w3-display-topright btn_trgistro_top"  title="Close Modal">
+            <span class="w3-button w3-xlarge w3-hover-red w3-display-topright btn_trgistro_top" title="Close Modal">
                ×
             </span>
-           <img alt="Avatar" class="w3-circle w3-margin-top avatar_inicio" id="avatar_inicio" src="./img/img_avatar4.png" style="width:30%"/>
+            <img alt="Avatar" class="w3-circle w3-margin-top avatar_inicio" id="avatar_inicio" src="./img/img_avatar4.png" style="width:30%"/>
             <h5>
                Restregase completando el formulario
             </h5>
@@ -67,7 +60,5 @@
          </div>
       </div>
    </div>
-</div>
-<div class="w3-container">
 </div>
 <!--  REGISTRO ===================================== -->

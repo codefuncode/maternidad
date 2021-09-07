@@ -57,6 +57,4 @@
       </div>
    </div>
 </div>
-<div class="w3-container">
-</div>
 <!-- INOICIO ================================= -->

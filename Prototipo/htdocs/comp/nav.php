@@ -1,6 +1,6 @@
 <!--  NAVEGACION  ============================================= -->
 
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left menu_navegacion" id="mySidebar" style="z-index:3;width:300px; display: none ;">
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left menu_navegacion" id="nav_lateral_contenedor" style="z-index:3;width:300px; display: none ;">
    <br/>
    <div class="panel_usuario">
       <div class="w3-container w3-row binbenida_usuario">
@@ -53,7 +53,7 @@
          <a class="w3-bar-item w3-button w3-padding" href="#">
             Ver reportes
          </a>
-         <a class="w3-bar-item w3-button w3-padding" href="#">
+   <!--       <a class="w3-bar-item w3-button w3-padding" href="#">
             xxxxxxxxxxxxxx
          </a>
          <a class="w3-bar-item w3-button w3-padding" href="#">
@@ -76,12 +76,12 @@
          </a>
          <a class="w3-bar-item w3-button w3-padding" href="#">
             xxxxxxxxxxxxxx
-         </a>
+         </a> -->
          <br/>
          <br/>
       </div>
    </div>
 </nav>
-<div class="w3-overlay w3-hide-large w3-animate-opacity" id="myOverlay" style="cursor:pointer" title="close side menu">
+<div class="w3-overlay w3-hide-large w3-animate-opacity" id="btn_cerar_nav_lateral" style="cursor:pointer; display: none ;" title="close side menu">
 </div>
 <!--  NAVEGACION  ============================================= -->

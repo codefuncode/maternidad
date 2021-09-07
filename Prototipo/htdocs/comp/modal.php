@@ -1,4 +1,3 @@
-
 <!--  MODAL ======================================== -->
 <div class="w3-container">
    <div class="w3-modal all_modal" id="mensaje_bebe_registro" style="display:none; ;">
@@ -10,13 +9,13 @@
             </span>
             <!--   <img alt="Avatar" class="w3-circle w3-margin-top avatar_inicio" id="avatar_inicio" src="./img/img_avatar4.png" style="width:30%"/> -->
             <h5>
-              xxxxxxxxxxxxxxx
+               xxxxxxxxxxxxxxx
             </h5>
          </div>
          <div class="w3-container">
             <div class="w3-section">
                <p class="mensaje_bebe_registro_text">
-                 xxxxxxxxxxxxxxxxxxxxxxxxxx
+                  xxxxxxxxxxxxxxxxxxxxxxxxxx
                </p>
             </div>
          </div>
@@ -34,7 +33,5 @@
          </div>
       </div>
    </div>
-</div>
-<div class="w3-container">
 </div>
 <!--  MODAL ======================================== -->
