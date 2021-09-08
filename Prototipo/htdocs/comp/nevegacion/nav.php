@@ -44,7 +44,7 @@
          <a class="w3-bar-item w3-button w3-padding btn_nav_registro_bebe" href="#">
             Registro de bebe
          </a>
-         <a class="w3-bar-item w3-button w3-padding" href="#">
+         <a class="w3-bar-item w3-button w3-padding btn_lactancia" href="#">
             Lactancia del bebe
          </a>
          <a class="w3-bar-item w3-button w3-padding" href="#">

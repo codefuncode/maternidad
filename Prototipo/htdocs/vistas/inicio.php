@@ -5,7 +5,7 @@
       <div class="" id="cuerpo" style=" display:none;">
          <!-- Top container -->
          <?php include "comp/nevegacion/nav_superior.php";?>
-         <?php include_once 'comp/nav.php';?>
+         <?php include_once 'comp/nevegacion/nav.php';?>
          <div class="w3-main" id="main" style="margin-left:300px;margin-top:43px;">
             <!--  contenedor  del cuerpo ============================================  -->
             <div class="w3-container cuerpo">

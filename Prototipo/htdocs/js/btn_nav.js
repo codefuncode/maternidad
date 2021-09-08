@@ -10,7 +10,8 @@ function btn_vav(argument) {
 	let btn_perfil_usuario =
 		document.querySelector('.btn_perfil_usuario');
 
-
+	let btn_lactancia =
+		document.querySelector('.btn_lactancia');
 
 	// =============================================================================================
 	//  Se trabajan los botones de navegación de la barra lateral
@@ -19,6 +20,17 @@ function btn_vav(argument) {
 	// el nombre de fichero y función {btn_nav_laeral()}
 
 
+	btn_lactancia.addEventListener("click", function(argument) {
+
+		for (var i = 0; i < all_user_panel.length; i++) {
+			all_user_panel[i].style.display = "none";
+		}
+
+		let lactancia_cenos = document.querySelector(".lactancia_cenos");
+		lactancia_cenos.style.display = "block";
+
+
+	});
 	btn_nav_registro_bebe.addEventListener("click", function(argument) {
 
 		for (var i = 0; i < all_user_panel.length; i++) {
